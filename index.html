@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Metadata / Head content -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Journal</title>
+
+    <!-- External scripts -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS scripts -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Responsive Navigation / Header content -->
+    <header>
+        <nav class="navbar animated animateNav animatedFadeInUp fadeInUp" id="navbar">
+            <ul>
+                <!-- Navigation links -->
+                <a class="active" href="/home" data-scroll>Home</a>
+                <a href="/contact" data-scroll>Contact</a>
+                <a href="/journal" data-scroll>Journal</a>
+                <a href="/tutorial" data-scroll>Tutorial</a>
+
+                <!-- Hamburger menu (Only visible on mobile screens) -->
+                <a href="javascript:void(0);" class="icon" onclick="activateHamburger()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction / Main content -->
+    <main>
+        <div class="intro animated animateIntro animatedFadeInUp fadeInUp">
+            <h1>Hey, You! <span class="wave">👋</span></h1>
+            <h3>
+                I'm a University of Brighton student studying Computer Science!
+    
+                If you want to see how I built this website - <a href="#">click here</a>.
+                If you want to view my thoughts and learnings whilst building this website - <a href="#">click here</a>.
+    
+                Thanks for visitng!
+            </h3>
+        </div>
+    </main>
+
+    <!-- Bottom links and information / Footer content -->
+    <footer>
+        <div class="copyright animated animateFooter animatedFadeInUp fadeInUp">
+            <p>Made with ❤️</p>
+            <p>Copyright © 2022. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script>
+        function activateHamburger() {
+          var x = document.getElementById("navbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* Navigation styling */
+@media screen and (max-width: 800px) {
+    .navbar {background-color: #333; padding-bottom: 25px}
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+}
+@media screen and (max-width: 800px) {
+    .navbar.responsive {position: relative}
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Index page styling */
+@media screen and (max-width: 800px) {
+    main {
+        justify-content: center;
+        text-align: center;
+    }
+}
