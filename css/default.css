@@ -17,6 +17,13 @@ a {
     text-decoration: none;
 }
 main, footer {padding: 16px}
+body {overflow: hidden}
+main {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    min-height: 85%;
+}
 
 /* Navigation styling */
 .navbar {overflow: hidden; padding-top: 14px}
@@ -34,4 +41,51 @@ main, footer {padding: 16px}
 .navbar .active {
     float: left;
     padding: 14px 0px 0px 16px;
+}
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+footer p {padding: 5px}
+
+/* Wave animation */
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+} 
+@keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+}
+
+/* Fade in animation */
+@keyframes fade-in {
+    from {transform: translate3d(0,40px,0)}
+    to {transform: translate3d(0,0,0); opacity: 1}
+}
+@-webkit-keyframes fade-in {
+    from {transform: translate3d(0,40px,0)}
+    to {transform: translate3d(0,0,0); opacity: 1}
+}
+.animated {animation-fill-mode: both}
+.animateNav {animation-duration: 1.5s}
+.animateIntro {animation-duration: 1s}
+.animateFooter {animation-duration: 0.5s}
+.animatedFadeInUp {opacity: 0}
+.fadeInUp {
+    opacity: 0;
+    animation-name: fade-in;
 }

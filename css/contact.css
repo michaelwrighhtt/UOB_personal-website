@@ -1,0 +1,43 @@
+.contact {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 60%;
+}
+form {
+    background-color: #353535;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+}
+form input, form textarea {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    margin: 15px;
+    padding: 15px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+form textarea {height: 100px; resize: none;}
+.contact .form-submit {
+    margin: 20px 20px 20px 0;
+    float: left;
+}
+.contact .form-submit .help, .contact .form-submit .help a {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #666;
+}
+.contact .form-submit .help a {text-decoration: underline; color:#888;}
+.contact .send {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #6bc76b;
+}
+.contact button:hover {cursor: pointer}

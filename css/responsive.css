@@ -1,6 +1,12 @@
 /* Navigation styling */
 @media screen and (max-width: 800px) {
-    .navbar {background-color: #333; padding-bottom: 25px}
+    .navbar {
+        background-color: #333;
+        padding-bottom: 25px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
       float: right;
@@ -8,7 +14,7 @@
     }
 }
 @media screen and (max-width: 800px) {
-    .navbar.responsive {position: relative}
+    .navbar.responsive {position: fixed}
     .navbar.responsive .icon {
         position: absolute;
         right: 0;
@@ -22,9 +28,19 @@
 }
 
 /* Index page styling */
+@media screen and (min-width: 1400px) {.intro {width: 40%}}
 @media screen and (max-width: 800px) {
+    body {overflow: auto}
     main {
         justify-content: center;
         text-align: center;
     }
+    .intro {width: 100%}
 }
+
+/* Contact Page styling */
+@media screen and (min-width: 1400px) {.contact {width: 30%}}
+@media screen and (max-width: 800px) {.contact {width: 90%}}
+
+/* Journal page styling */
+@media screen and (max-width: 800px) {.journal {padding-top: 70px;}}

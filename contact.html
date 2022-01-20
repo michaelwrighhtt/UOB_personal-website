@@ -14,7 +14,7 @@
 
     <!-- Custom CSS scripts -->
     <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -24,8 +24,8 @@
         <nav class="navbar animated animateNav animatedFadeInUp fadeInUp" id="navbar">
             <ul>
                 <!-- Navigation links -->
-                <a class="active" href="#" data-scroll>Home</a>
-                <a href="contact.html" data-scroll>Contact</a>
+                <a href="index.html" class="active" data-scroll>Home</a>
+                <a href="#" data-scroll>Contact</a>
                 <a href="journal.html" data-scroll>Journal</a>
 
                 <!-- Hamburger menu (Only visible on mobile screens) -->
@@ -36,24 +36,29 @@
         </nav>
     </header>
 
-    <!-- Introduction / Main content -->
+    <!-- Contact page / Main content -->
     <main>
-        <div class="intro animated animateIntro animatedFadeInUp fadeInUp">
-            <h1>Hey, You! <span class="wave">👋</span></h1>
-            <h3>
-                I'm a University of Brighton student studying Computer Science!
-    
-                If you want to see how I built this website - <a href="https://github.com/michaelwrighhtt/UOB_personal-website">click here</a>.
-                If you want to view my thoughts and learnings whilst building this website - <a href="journal.html">click here</a>.
-    
-                Thanks for visitng!
-            </h3>
-            <h3 class="hint">(Psst! This website looks best in windowed mode!)</h3>
+        <div class="contact animated animateIntro animatedFadeInUp fadeInUp">
+            <h1>Let's connect 🤝</h1>
+
+            <div class="form-container">
+                <form>
+                    <input type="text" placeholder="Full name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="number" placeholder="Phone number">
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Message (500 Characters)" maxlength="500"></textarea>
+                </form>
+                <div class="form-submit">
+                    <button class="send">Send 👉</button>
+                    <span class="help">Not sending?<a href="mailto:help@email.co.uk">Let us know!</a></span>
+                </div>
+            </div>
         </div>
     </main>
 
-    <!-- Bottom links and information / Footer content -->
-    <footer>
+     <!-- Bottom links and information / Footer content -->
+     <footer>
         <div class="copyright animated animateFooter animatedFadeInUp fadeInUp">
             <p>Made with ❤️</p>
             <p>Copyright © 2022. All rights reserved.</p>

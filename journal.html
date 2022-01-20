@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Metadata / Head content -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Journal</title>
+
+    <!-- External scripts -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS scripts -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/journal.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Responsive Navigation / Header content -->
+    <header>
+        <nav class="navbar animated animateNav animatedFadeInUp fadeInUp" id="navbar">
+            <ul>
+                <!-- Navigation links -->
+                <a class="active" href="index.html" data-scroll>Home</a>
+                <a href="contact.html" data-scroll>Contact</a>
+                <a href="#" data-scroll>Journal</a>
+
+                <!-- Hamburger menu (Only visible on mobile screens) -->
+                <a href="javascript:void(0);" class="icon" onclick="activateHamburger()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="journal animated animateIntro animatedFadeInUp fadeInUp">
+            <h1>Week One: Getting Started <span>04/10/2021</span></h1>
+            <p>
+                <u>Today I have learned</u>
+                <ul>
+                    <li>How to link web pages together</li>
+                    <li>Understood basics syntax and tags</li>
+                    <li>How to use brighton domains</li>
+                    <li>Started building my own learning journal</li>
+                </ul>
+            </p>
+
+            <h1>Week Two: HTML Markup <span>11/10/2021</span></h1>
+            <p>
+                <u>Today I have learned</u>
+                <ul>
+                    <li>How to make a list using the li tag</li>
+                    <li>How to implemet an email link in the footer</li>
+                </ul>
+            </p>
+
+            <h1>Week Three: Anchor tags and responsive web design <span>18/10/2021</span></h1>
+            <p>
+                <u>Today I have learned</u>
+                <ul>
+                    <li>How to make a table</li>
+                    <li>How to make websites reponsive using HTML</li>
+                    <li>How to quote text</li>
+                    <li>How to make an image into a link</li>
+                </ul>
+            </p>
+
+            <h1>Week Four:  Introduction to CSS <span>25/10/2021</span></h1>
+            <p>
+                <u>Today I have learned</u>
+                <ul>
+                    <li>The basics of CSS and how it's applied to modern and older browsers</li>
+                    <li>Understood how normalize.css works and how to implement it</li>
+                </ul>
+            </p>
+
+            <h1>Week Five: CSS box model and positioning <span>01/11/2021</span></h1>
+            <p>
+                <u>Today I have learned</u>
+                <ul>
+                    <li>How to use and customise the CSS box model</li>
+                    <li>How to use Google fonts</li>
+                    <li>How to use different units to position my content responsively</li>
+                </ul>
+            </p>
+
+            <h1>Week Six: Responsive web design <span>08/11/2021</span></h1>
+            <p>
+                <u>Today I have learned</u>
+                <ul>
+                    <li>How to use CSS media queries</li>
+                    <li>How to make grids in CSS</li>
+                    <li>The general rules of respoinsive web design</li>
+                </ul>
+            </p>
+
+            <h1>Week Seven: Responsive media <span>15/11/2021</span></h1>
+            <p>
+                <u>Today I have learned</u>
+                <ul>
+                    <li>How to use Photoshop to crop images</li>
+                    <li>How to integrate YouTube videos into my web page</li>
+                    <li> The different types of flexible media and how to make them responsive</li>
+                </ul>
+            </p>
+
+            <h1>Week Eight: Using CSS flexbox <span>22/11/2021</span></h1>
+            <p>
+                <u>Today I have learned</u>
+                <ul>
+                    <li>How to use CSS flexbox to position elements</li>
+                    <li>Understood how CSS flexbox works</li>
+                    <li>I've added content to my tutorial page</li>
+                </ul>
+            </p>
+
+            <h1>Week Nine: Building forms <span>29/11/2021</span></h1>
+            <p>
+                <u>Today I have learned</u>
+                <ul>
+                    <li>How to make a form in HTML</li>
+                    <li>How to use HTML5 validation in forms</li>
+                    <li>Different types of input methods for forms</li>
+                    <li>How to style forms in CSS</li>
+                </ul>
+            </p>
+        </div>
+    </main>
+
+     <!-- Bottom links and information / Footer content -->
+     <footer>
+        <div class="copyright animated animateFooter animatedFadeInUp fadeInUp">
+            <p>Made with ❤️</p>
+            <p>Copyright © 2022. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script>
+        function activateHamburger() {
+          var x = document.getElementById("navbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+    </script>
+</body>
+</html>

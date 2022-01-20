@@ -1,0 +1,7 @@
+body {
+    overflow: auto;
+}
+span {
+    color: #666;
+    font-size: 16px;
+}
